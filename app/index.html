@@ -23,14 +23,82 @@
     <!-- endbuild -->
   </head>
   <body>
-    <header></header>  
+    <header>
+        <div id="hcontainer">
+            <span class="mega-octicon octicon-mark-github"></span>
+        <div>
+    </header>  
     <div id="bodycontainer">
         <div id="columnone"></div>
         <div id="columntwo">
-            <div class="results"></div>
+            <div class="results">
+                
+            </div>    
         </div>
     </div>
-    <footer></footer>
+    <footer>
+        <script type="text/template" id="sidebar_template">
+            <img class="avatar" src="<%=avatar_url%>"/>
+            <div id="profilename"><%=name%><div>
+            <div id="username"><%=login%></div>
+
+            <div id="vcarddetails">
+                <span class="octicon octicon-clock"></span>
+                <span class=joindate>Joined on </span>
+                <%=created_at%>
+            </div>
+
+            <div id="vcardstats">
+
+            <div class="statscontainer">
+                
+            </span>
+
+            <div class="statscontainertwo">
+                
+            </span>
+
+            <div class="statscontainerthree">
+        
+            </span>
+
+            </div>
+        </script>
+        <script type="text/template" id="repos">
+            
+            <span class="mega-octicon octicon-repo"></span>
+            <div id="repoleft">
+                <a class="repolinks" href="https://github.com/locomotes/<%=name%>"><%=name%></a>
+                <div id="repoupdate">Last Updated <%=updated_at%></div>
+            </div>
+            <span class="reporight">
+                <span id="repolang"><%=language%></span>
+                <span class="octicon octicon-star"></span>
+                <span id="repostar"><%=stargazers_count%></span>
+                <span class="octicon octicon-git-branch"></span>
+                <span id="repofork"><%=forks_count%></span>
+            </span>
+            <div id="repoline"><hr></div>
+
+
+        </script>
+        <!-- <div id="reponame"><%=name%></div> -->
+
+
+        <!-- <span class="mega-octicon octicon-repo"></span>
+            <div id="reponame"><%=name%></div>
+            <div id="repoupdate">Last Updated<%=updated_at%></div>
+            <div class="reporight">
+                 <div id="repolang"><%=language%></div>
+                 <span class="octicon octicon-star"></span>
+                 <div id="repostar"><%=stargazers_count%></div>
+                 <span class="octicon octicon-git-branch"></span>
+                 <div id="repofork"><%=forks_count%></div>
+             </div> -->
+    </footer>
+
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -41,7 +109,9 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/ghrepo.js"></script>
         <script src="scripts/user.js"></script>
+        <script src="scripts/secret.js"></script>
         <script src="scripts/main.js"></script>
+        
 
         <!-- endbuild -->
 </body>
