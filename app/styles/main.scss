@@ -34,7 +34,7 @@ header {
 
 #bodycontainer {
   margin: 0 auto;
-  height: 900px;
+  height:1300px;
   width: 1000px;
   border: 1px solid black;
   #columnone {
@@ -88,6 +88,10 @@ header {
     float: right;
     width: 740px;
     height: 900px;
+    #spacer {
+      width: 740px;
+      height: 20px;
+    }
     #navcontainer {
       height: 45px;
       width: 740px;
@@ -122,11 +126,52 @@ header {
           font-size: 14px;
       }
       #edit {
-        height: 110px;
-        width: 26px;
-        background-color: $color1;
+        height: 14px;
+        width: 88px;
+        float: right;
+        @include button(#eeeeee);
         font-size: 13px;
+        border: 1px solid #d5d5d5;
+        margin-top: 6px;
+
+      }
+    }
+    #midcontainer {
+      width: 740px;
+      height: 50px;
+      border: 1px solid red;
+      font-size: 13px;
+      #newbutton{
+        float: right;
+        height: 20px;
+        width: 42px;
+        @include button(#60b044);
+        margin-top: 5px;
+      }
+      #rfcontainer{
+        float: right;
+        height: 50px;
+        width: 350px;
         border: 1px solid red;
+        li {
+          list-style: none;
+          display: inline;
+          .filterers {
+            color: #4183c4;
+            text-decoration: none;
+          }
+          .filterers:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      #searchbutton {
+        float: right;
+        height: 20px;
+        width: 40px;
+        @include button(#eeeeee);
+        color: black;
+        margin-top: 5px;
       }
     }
     .results {
@@ -181,7 +226,6 @@ header {
           @include repor;
           margin-right: 5px;
         }
-        
       }
     }
     #repoline {
@@ -190,7 +234,6 @@ header {
       color: $color1;
     }
   }
-}
 footer {
   width: 100%;
   height: 100px;

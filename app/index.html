@@ -31,8 +31,8 @@
     <div id="bodycontainer">
         <div id="columnone"></div>
         <div id="columntwo">
+            <div id="spacer"></div>
             <div id="navcontainer">
-
                 <div id="contributions">
                     <a class="repotop" href="https://github.com/locomotes">
                         <span class="octicon octicon-diff-added"></span>
@@ -52,11 +52,38 @@
                     </a>
                 </div>
                 <div id="edit">
+                    <span class="octicon octicon-pencil"></span>
                     Edit Profile
                 </div>
             </div>
+            <div id="midcontainer">
+                <div id="newbutton">
+                    <span class="octicon octicon-repo"></span>
+                    New
+                </div>
+                <div id="rfcontainer">
+                <ul class="repofilterer">
+                    <li><a class="filterers" href="https://github.com/locomotes?tab=repositories">All</a></li>
+                    <li><a class="filterers" href="https://github.com/locomotes?tab=repositories">Public</a></li>
+                    <li><a class="filterers" href="https://github.com/locomotes?tab=repositories">Private</a></li>
+                    <li><a class="filterers" href="https://github.com/locomotes?tab=repositories">Sources</a></li>
+                    <li><a class="filterers" href="https://github.com/locomotes?tab=repositories">Forks</a></li>
+                    <li><a class="filterers" href="https://github.com/locomotes?tab=repositories">Mirrors</a></li>
+                </ul>
+                </div>
+                <div id="searchbutton">
+                    Search
+                </div>
+                <!-- <div class="search-bar">
+                    <div class="search-and-submit">
+                      <input type="search" placeholder="Enter Search" />
+                      <button type="submit">
+                        <img src="images/search-icon-black.png" alt="">
+                      </button>
+                    </div>
+                </div> -->
+            </div>
             <div class="results">
-                
             </div>    
         </div>
     </div>
@@ -65,31 +92,21 @@
             <img class="avatar" src="<%=avatar_url%>"/>
             <div id="profilename"><%=name%><div>
             <div id="username"><%=login%></div>
-
             <div id="vcarddetails">
                 <span class="octicon octicon-clock"></span>
                 <span class=joindate>Joined on </span>
                 <%=created_at%>
             </div>
-
             <div id="vcardstats">
-
                 <div class="statscontainer">
-                    
                 </div>
-
                 <div class="statscontainertwo">
-                    
                 </div>
-
                 <div class="statscontainerthree">
-            
                 </div>
-
             </div>
         </script>
         <script type="text/template" id="repos">
-            
             <span class="mega-octicon octicon-repo"></span>
             <div id="repoleft">
                 <a class="repolinks" href="https://github.com/locomotes/<%=name%>"><%=name%></a>
@@ -103,22 +120,7 @@
                 <span id="repofork"><%=forks_count%></span>
             </span>
             <div id="repoline"><hr></div>
-
-
         </script>
-        <!-- <div id="reponame"><%=name%></div> -->
-
-
-        <!-- <span class="mega-octicon octicon-repo"></span>
-            <div id="reponame"><%=name%></div>
-            <div id="repoupdate">Last Updated<%=updated_at%></div>
-            <div class="reporight">
-                 <div id="repolang"><%=language%></div>
-                 <span class="octicon octicon-star"></span>
-                 <div id="repostar"><%=stargazers_count%></div>
-                 <span class="octicon octicon-git-branch"></span>
-                 <div id="repofork"><%=forks_count%></div>
-             </div> -->
     </footer>
 
 
