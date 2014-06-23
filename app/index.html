@@ -25,7 +25,14 @@
   <body>
     <header>
         <div id="hcontainer">
-            <span class="mega-octicon octicon-mark-github"></span>
+            <div id="headerleft">
+                <span class="mega-octicon octicon-mark-github"></span>
+                <div id="notificationbox">
+                <span class="octicon octicon-primitive-dot"></span>
+                </div>
+            </div>
+            <div id="headerright">
+            </div>
         <div>
     </header>  
     <div id="bodycontainer">
@@ -96,10 +103,16 @@
             </div>
             <div id="vcardstats">
                 <div class="statscontainer">
+                    <a class="followers" href="https://github.com/locomotes/followers"><div class="topstats"><%=followers%></div></a>
+                    <a class="followers" href="https://github.com/locomotes/followers"><div class="bottomstats">Followers</div></a>
                 </div>
                 <div class="statscontainertwo">
+                    <a class="stars" href="https://github.com/stars"><div class="topstats">0</div></a>
+                    <a class="stars" href="https://github.com/stars"><div class="bottomstats">Starred</div></a>
                 </div>
                 <div class="statscontainerthree">
+                    <a class="following" href="https://github.com/locomotes/following"><div class="topstats"><%=following%></div></a>
+                    <a class="following" href="https://github.com/locomotes/following"><div class="bottomstats">Following</div></a>
                 </div>
             </div>
         </script>

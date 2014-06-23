@@ -17,21 +17,49 @@ $color4: #666666;
 }
 
 @mixin csize {
-  width: 5px;
-  height: 5px;
-  background-color: blue;
+  width: 80px;
+  height: 85px;
+  border: 1px solid red;
+  float: left;
 }
 
 header {
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-color: $color1;
   #hcontainer{
     width: 1000px;
     margin: 0 auto;
+    #headerleft{
+      height: 45px;
+      width: 700px;
+      border: 1px solid red;
+      float: left;
+      .octicon-mark-github {
+        font-size: 28px;
+        margin-top: 6px;
+        float: left;
+      }
+      #notificationbox {
+        width: 45px;
+        height: 45px;
+        border: 1px solid red;
+        float: left;
+        margin-left: 15px;
+        .octicon-primitive-dot {
+          margin-left: 18px;
+          margin-top: 13px;
+        }
+      }
+    }
+    #headerright{
+      height: 45px;
+      width: 296px;
+      border: 1px solid red;
+      float: right;
+    } 
   }
 }
-
 #bodycontainer {
   margin: 0 auto;
   height:1300px;
@@ -69,17 +97,52 @@ header {
     }
     #vcardstats {
       // width: 215px;
+      border: 1px solid red;
+      height: 90px;
       
       .statscontainer {
         @include csize;
+        .followers {
+          text-decoration: none;
+          .topstats {
+            font-size: 28px;
+            text-align: center;
+          }
+          .bottomstats {
+              font-size: 11px;
+              text-align: center;
+          }
+        }
       }
       .statscontainertwo {
         // float: left;
         @include csize;
+        .stars {
+          text-decoration: none;
+          .topstats {
+            font-size: 28px;
+            text-align: center;
+          }
+          .bottomstats {
+              font-size: 11px;
+              text-align: center;
+          }
+        }
       }
       .statscontainerthree {
         // float: left;
         @include csize;
+        .following {
+          text-decoration: none;
+          .topstats {
+            font-size: 28px;
+            text-align: center;
+          }
+          .bottomstats {
+              font-size: 11px;
+              text-align: center;
+          }
+        }
       }
     }
 
@@ -133,7 +196,6 @@ header {
         font-size: 13px;
         border: 1px solid #d5d5d5;
         margin-top: 6px;
-
       }
     }
     #midcontainer {
@@ -159,6 +221,8 @@ header {
           .filterers {
             color: #4183c4;
             text-decoration: none;
+            font-size: 15px;
+            padding: 3px;
           }
           .filterers:hover{
             text-decoration: underline;
@@ -193,22 +257,11 @@ header {
             padding: .5em .8em;
             font-size: .9em;
             font-style: italic;
-            // border-radius: $base-border-radius * 2;
             margin: 0;
           }
-          // button[type=submit] {
-          //   @include button(simple, lighten($base-border-color, 10));
-          //   @include position(absolute, 0.3em 0.3em 0.3em 0);
-          //   outline: none;
-          //   padding: 5px 10px;
-          //   img {
-          //     height: 12px;
-          //     opacity: .7;
-          //   }
-        }
-  }
-}
-    }
+        } 
+      }
+    }    
     .results {
       height: 100px;
       width: 795;
@@ -234,7 +287,6 @@ header {
       .repolinks:hover{
         text-decoration: underline;
       }
-
       #repoupdate {
         color: $color3;
         font-size: 11px;
@@ -267,10 +319,11 @@ header {
       width: 740px;
       clear: both;
       color: $color1;
-    }
-  // }
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: $color1;
-}
+    }  
+  }
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: $color1;
+  }
+// }
