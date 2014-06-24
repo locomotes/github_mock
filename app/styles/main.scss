@@ -35,6 +35,10 @@ header {
       width: 700px;
       border: 1px solid red;
       float: left;
+      .cmd-form {
+        margin-left: 12px;
+        margin-top: 2px;
+      }
       .octicon-mark-github {
         font-size: 28px;
         margin-top: 6px;
