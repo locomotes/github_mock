@@ -19,7 +19,7 @@ $color4: #666666;
 @mixin csize {
   width: 80px;
   height: 85px;
-  border: 1px solid red;
+  // border: 1px solid red;
   float: left;
 }
 
@@ -55,10 +55,14 @@ header {
           margin-top: 13px;
         }
       }
+      #headlist {
+        list-style: none;
+        display: inline;
+      }
     }
     #headerright{
       height: 45px;
-      width: 296px;
+      width: 295px;
       border: 1px solid red;
       float: right;
     } 
@@ -66,7 +70,7 @@ header {
 }
 #bodycontainer {
   margin: 0 auto;
-  height:1300px;
+  height:1850px;
   width: 1000px;
   border: 1px solid black;
   #columnone {
@@ -101,8 +105,9 @@ header {
     }
     #vcardstats {
       // width: 215px;
-      border: 1px solid red;
+      // border: 1px solid red;
       height: 90px;
+      margin-top: 18px;
       
       .statscontainer {
         @include csize;
@@ -210,7 +215,7 @@ header {
       #newbutton{
         float: right;
         height: 20px;
-        width: 42px;
+        width: 44px;
         @include button(#60b044);
         margin-top: 5px;
       }
@@ -256,7 +261,7 @@ header {
           margin-top: 4px;
           input[type=search] {
             @include appearance(none);
-            width: 230px;
+            width: 225px;
             height: 40px;
             padding: .5em .8em;
             font-size: .9em;
@@ -313,7 +318,7 @@ header {
           @include repor;
           margin-left: 10px;
         }
-        #repofork {
+        #rork {
           @include repor;
           margin-right: 5px;
         }
