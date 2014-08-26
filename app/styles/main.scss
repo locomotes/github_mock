@@ -1,5 +1,6 @@
 
-@import 'bourbon/bourbon';
+// @import '../styles/bourbon/bourbon';
+@import '../../bower_components/bourbon/dist/bourbon';
 
 // super light grey
 $color1: #e5e5e5;
@@ -18,7 +19,7 @@ $color4: #666666;
 
 @mixin csize {
   width: 10px;
-  height: 10px:
+  height: 10px;
   background-color: blue;
 }
 
